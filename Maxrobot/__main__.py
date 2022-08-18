@@ -88,7 +88,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [InlineKeyboardButton(text="👩‍💻Support Chat", url=f"https://t.me/MaxRobotSupport"),
     InlineKeyboardButton(text="📢News Channel", url=f"https://t.me/MaxRobot_updates")],
     [InlineKeyboardButton(text="🔧Help🔧", callback_data="bot_commands")],
-    [InlineKeyboardButton(text="🧬languages ", callback_data="_langs")]])
+    [InlineKeyboardButton(text="🧬languages ", callback_data="langus")]])
 
 keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text="📚 Commands & help", url=f"t.me/{BOT_USERNAME}?start=help")]])
 
