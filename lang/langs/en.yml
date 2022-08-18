@@ -1,15 +1,15 @@
 name : English
 
 #menu - menu.py
-menu : "Maxrobot was created on **August 10, 2021**. \nWe are currently developing and maintaining plugins of **WilliamButcherBot**  and **Alita_Robot**, using only the **Pyrogram** library.\n\n• **creator** : [supun](https://t.me/maxsupun)\n• **Language** : [python 3](https://www.python.org/)\n• **Database** : [Mongo db](https://cloud.mongodb.com/)\n• **Server** : [Heroku](https://heroku.com/)\n• **Build Version** : `2.0`\n\n@TheTheMaxrobotbot"
+menu : "x"
 back : "« Back"
 
 #main - main.py
-main1 : " Hello There! I'm {}  \n\nAn  advanced telegram Group management Bot to manage your groups and protect your groups & for all your needs."
-main2 : "**PM me if you have any questions on how to use me!**"
+main1 : " Hello There! {}  \n\n,I am special Group manager Bot to help \nyou to protect and manage your Groups \nI am a Powerful Assistant[🧛](https://telegra.ph/file/2fcbedac71233eeaa3ac9.jpg)"
+main2 : "**I am Online👑 \nPM me if you have any questions on how to use me!**"
 main3 : "Click here"
 main4 : "Click on the below button to get help about {}"
-main5 : "**Welcome to help menu**\n\nI'm a group management bot with some useful features.\nclick on the buttons below to open the help menu about that module \nIf you have found bugs or have questions on how to use me, \nhave a look at my [Docs](https://Themaxsupun.gitbook.io/Maxrobot-bot/), or head to @Theteambots.\n\n**All commands can be used with / **"
+main5 : "Welcome to help menu \n\nAn anime - Themed advanced telegram Group management \nBot For help You to Manage & Protect Your Groups.[🥷🏻](https://telegra.ph/file/ff6aed6e8d83b46fea6e0.jpg)"
 main6 : "Here is the help for **{}**"
 
 #plugin - admin.py
