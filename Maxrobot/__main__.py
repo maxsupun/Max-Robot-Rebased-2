@@ -204,7 +204,9 @@ async def startcq(client,CallbackQuery, _):
     await CallbackQuery.message.edit(text=f"""
 Hey there {CallbackQuery.from_user.mention}, 
 
-My name is Maxrobot an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs.feel free to add me to your groups! """,disable_web_page_preview=True,reply_markup=home_keyboard_pm)
+I am {BOT_NAME},special Group manager Bot to help
+you to protect and manage your Groups
+I am a Powerful Assistant[🧛](https://telegra.ph/file/2fcbedac71233eeaa3ac9.jpg)""",disable_web_page_preview=True,reply_markup=home_keyboard_pm)
 
 
 async def help_parser(name, keyboard=None):
