@@ -4,10 +4,10 @@ from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 from Maxrobot.utils.lang import *
 
 fbuttons = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(text="Support Group", url="https://t.me/TheMaxrobotsupport"),
-          InlineKeyboardButton(text="News Channel", url="https://t.me/TheTheMaxrobotbot")], 
-        [ InlineKeyboardButton(text="Source Code", url="https://github.com/Themaxsupun/The-Maxrobotbot"),
-          InlineKeyboardButton(text="Documentation", url="https://Themaxsupun.gitbook.io/Maxrobot-bot")],
+        [InlineKeyboardButton(text="👩‍💻Support Chat", url=f"https://t.me/MaxRobotSupport"),
+        InlineKeyboardButton(text="📢News Channel", url=f"https://t.me/MaxRobot_updates")],
+        [InlineKeyboardButton(text="🔧Help🔧", callback_data="bot_commands")],
+        [InlineKeyboardButton(text="🧬languages ", callback_data="_langs")]]),
         [InlineKeyboardButton("🔙 Back", callback_data='startcq')]])
 
 keyboard =InlineKeyboardMarkup(
@@ -24,7 +24,7 @@ keyboard =InlineKeyboardMarkup(
       InlineKeyboardButton(text="🇷🇺 Russian", callback_data="languages_ru")], 
      [InlineKeyboardButton("🔙 Back", callback_data='startcq')]])
 
-@app.on_callback_query(filters.regex("_langs"))
+@app.on_callback_query(filters.regex("langus"))
 @languageCB
 async def commands_callbacc(client, CallbackQuery, _):
     await CallbackQuery.message.edit(text= "Choose Your languages:",reply_markup=keyboard,disable_web_page_preview=True)
