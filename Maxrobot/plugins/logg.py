@@ -39,7 +39,7 @@ async def make_logo(_, message):
             return await message.reply_text("Please give a text to make logo")
     m = await message.reply_text("📸 Creating..")
     name = message.text.split(None, 1)[1] if len(message.command) < 3 else message.text.split(None, 1)[1].replace(" ", "%20")
-    api = get(f"https://api.singledevelopers.net/logo?name={name}")
+    api = get(f"https://api.singledevelopers.software/logo?name={name}")
     await m.edit("📤 Uploading ...")
     await sz.send_chat_action(message.chat.id, "upload_photo")
     img = Image.open(BytesIO(api.content))
@@ -52,8 +52,8 @@ async def make_logo(_, message):
     if os.path.exists(logoname):
             os.remove(logoname)
 
-__help__ = """
+__MODULE__ = "Logo Maker"
+__HELP__ = """
 ** logo Maker **
 ❍ /logo <name>: Get creative logos.
 """
-__mod_name__ = "Logo Maker"
